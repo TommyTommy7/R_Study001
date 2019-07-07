@@ -16,6 +16,12 @@ Sizelist[1]       #リストの1つめ(リスト)
 Sizelist[[1]]     #リストの1つめ(ベクトル)
 Sizelist[[1]][2]  #そのベクトルの2つめの要素(文字列)
 
+### クラスの確認 ###
+class(Sizelist[1])      # list
+class(Sizelist[[1]])    # character - vector
+class(Sizelist[[1]][2]) # character - 要素
+# ----------------- #
+
 Sizelist[2]
 Sizelist[[2]]
 Sizelist[[2]][2]
