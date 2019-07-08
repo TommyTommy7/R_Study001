@@ -105,7 +105,7 @@ DFSize[1, 1]       #要素は文字列となっている
 
 str(DFSize)        #型と構造
 
-
+View(DFSize)     #データフレームの表示（RStudioの左上ペイン）
 
 
 #条件分岐（if）
@@ -157,3 +157,7 @@ order_price
 #sapply()：リストの全ての要素に、指定した関数を一度に実行する
 sapply(order_list, get_price)   #order_listの全ての要素にget_priceを実行
 
+oder_price <- NULL
+oder_price <- sapply(order_list, get_price)
+
+str(oder_price)
